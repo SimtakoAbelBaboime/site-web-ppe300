@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--
+  Site vitrine de NovaLink Togo (entreprise cliente fictive).
+  Livré par l'équipe PPE 300 Phase 2 - IPNET Institute of Technology.
+  Coordonnées fictives (projet scolaire) : contact@ipnet.local, +228 22 00 00 00, Boulevard du 13 Janvier, Lomé (voir SITE_README.md).
+  Site 100 % statique : aucune ressource externe, fonctionne hors ligne sur IIS (LAN) et sur Vercel.
+-->
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NovaLink Togo | Services informatiques et intégration réseau à Lomé</title>
+<meta name="description" content="NovaLink Togo conçoit, déploie et maintient l'informatique des organisations à Lomé : réseau, annuaire Active Directory, messagerie professionnelle, site web, sécurité des accès et support.">
+<meta name="theme-color" content="#1B3A6B">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-network" viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="5" rx="1.2"/><rect x="2.5" y="16.5" width="6" height="5" rx="1.2"/><rect x="15.5" y="16.5" width="6" height="5" rx="1.2"/><path d="M12 7.5V12M5.5 16.5V12h13v4.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M15.5 4.8a3.5 3.5 0 0 1 0 6.4M18 14.8c2 .7 3.2 2.5 3.5 5.2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c-3.2 3.6-3.2 15.4 0 19M12 2.5c3.2 3.6 3.2 15.4 0 19"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.5 4 5.5v6c0 5 3.4 8.8 8 10 4.6-1.2 8-5 8-10v-6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-support" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="13.5" width="4" height="6" rx="1.5"/><rect x="17.5" y="13.5" width="4" height="6" rx="1.5"/><path d="M19.5 19.5c0 1.5-1.5 2-4 2H13"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20.5 20.5-4.5-4.5"/></symbol>
+  <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M3.5 20.5h17"/><path d="M15.5 4.5 19 8l-9.5 9.5H6V14z"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 2.5h6M10 2.5v6L4.5 19a1.8 1.8 0 0 0 1.6 2.5h11.8a1.8 1.8 0 0 0 1.6-2.5L14 8.5v-6"/><path d="M7 15h10"/></symbol>
+  <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M14.5 4.5c2.6-1.2 5-1 5-1s.2 2.4-1 5L13 14l-3-3z"/><path d="M10 11H6.5L4 13.5l4 .5M13 14v3.5L10.5 20l-.5-4"/><path d="M6 18c-1 1-1.5 2.5-1.5 2.5S6 20 7 19"/></symbol>
+  <symbol id="i-handshake" viewBox="0 0 24 24"><path d="m2.5 11 4-4.5 4 1.5 2-1.5 4 .5 5 4.5"/><path d="m6.5 13 4 4c.8.8 2 .8 2.8 0l4.2-4.2"/><path d="m10 10.5 2.5 2.5M12.5 9l3 3"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.5h3.5l1.8 4.5-2.3 1.5a11 11 0 0 0 6.5 6.5l1.5-2.3 4.5 1.8V19a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5V12l3.5 2"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9.5 5-9.5 5-9.5-5z"/><path d="m2.5 12.5 9.5 5 9.5-5M2.5 16.5l9.5 5 9.5-5"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 4.5h16a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 4v-4H4A1.5 1.5 0 0 1 2.5 16V6A1.5 1.5 0 0 1 4 4.5z"/><path d="M7.5 9.5h9M7.5 13h6"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 19.5h10.5a4.5 4.5 0 0 0 .6-9 6 6 0 0 0-11.6 1.5A3.8 3.8 0 0 0 7 19.5z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+</svg>
+
+<a class="skip" href="#contenu">Aller au contenu principal</a>
+
+<header class="site-header" id="haut">
+  <div class="wrap header-inner">
+    <a class="brand" href="#haut" aria-label="NovaLink Togo - retour en haut de la page">
+      <img src="favicon.svg" alt="" width="40" height="40">
+      <span class="brand-name">NovaLink <span>Togo</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="sr-only">Menu</span>
+      <svg class="ico ico-open" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="ico ico-close" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+    <nav class="nav" id="menu" aria-label="Navigation principale">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#pourquoi">Pourquoi nous</a></li>
+        <li><a href="#methode">Méthode</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-primary btn-sm nav-cta" href="#contact">Nous contacter</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu" tabindex="-1">
+
+  <section class="hero" aria-labelledby="hero-titre">
+    <div class="hero-shapes" aria-hidden="true"><span class="shape s1"></span><span class="shape s2"></span></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow eyebrow-dark"><span class="pulse" aria-hidden="true"></span>Services informatiques &amp; intégration réseau · Lomé</p>
+        <h1 id="hero-titre">Une informatique <span class="hl">fiable et maîtrisée</span>, au service de votre activité.</h1>
+        <p class="lead">NovaLink Togo conçoit, déploie et maintient le système d'information des entreprises et organisations : réseau, comptes utilisateurs, messagerie professionnelle, site web et sécurité des accès, avec un interlocuteur unique.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Parler de votre projet <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-outline-light" href="#services">Découvrir nos services</a>
+        </div>
+        <ul class="hero-points">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Interlocuteur unique</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Solutions documentées</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Validation avant mise en service</li>
+        </ul>
+      </div>
+      <div class="hero-visual">
+        <img src="images/hero-infra.svg" width="532" height="390" alt="Illustration : un serveur central relié aux services d'identités, de messagerie, de site web et de sécurité, tous indiqués comme actifs.">
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-strip" aria-labelledby="h-tech">
+    <div class="wrap tech-inner">
+      <h2 id="h-tech" class="tech-title">Technologies que nous mettons en œuvre</h2>
+      <ul class="tech-list">
+        <li>Windows Server</li>
+        <li>Active Directory</li>
+        <li>DNS &amp; DHCP</li>
+        <li>Stratégies de groupe</li>
+        <li>IIS</li>
+        <li>SMTP · IMAP · POP3</li>
+        <li>RADIUS (NPS)</li>
+        <li>Hébergement cloud</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="services" aria-labelledby="h-services">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Nos services</p>
+        <h2 id="h-services">Toutes les briques de votre système d'information</h2>
+        <p>Du câble réseau jusqu'à votre site en ligne, nous prenons en charge chaque service et veillons à ce qu'ils fonctionnent ensemble.</p>
+      </header>
+      <ul class="cards">
+        <li class="card">
+          <span class="card-ico"><svg class="ico" aria-hidden="true"><use href="#i-network"/></svg></span>
+          <h3>Réseau &amp; connectivité</h3>
+          <p>Plan d'adressage, serveurs DNS et DHCP, routage et partage de l'accès Internet : un réseau stable et documenté.</p>
+          <ul class="ticks"><li>Adressage et nommage des postes</li><li>Attribution automatique des adresses</li><li>Accès Internet partagé (NAT)</li></ul>
+        </li>
+        <li class="card">
+          <span class="card-ico"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span>
+          <h3>Annuaire &amp; postes de travail</h3>
+          <p>Un domaine Active Directory pour centraliser les comptes, organiser les services et appliquer vos règles sur chaque poste.</p>
+          <ul class="ticks"><li>Unités d'organisation par service</li><li>Groupes et dossiers partagés</li><li>Stratégies de groupe (GPO)</li></ul>
+        </li>
+        <li class="card">
+          <span class="card-ico"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></span>
+          <h3>Messagerie professionnelle</h3>
+          <p>Des adresses e-mail à votre nom de domaine, un serveur de messagerie maîtrisé et des clients configurés sur les postes.</p>
+          <ul class="ticks"><li>Une boîte par collaborateur</li><li>Envoi et réception SMTP / IMAP</li><li>Configuration des clients mail</li></ul>
+        </li>
+        <li class="card">
+          <span class="card-ico"><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg></span>
+          <h3>Site web &amp; nom de domaine</h3>
+          <p>Conception de votre site vitrine, hébergement sur votre réseau interne puis en ligne, et gestion des enregistrements DNS.</p>
+          <ul class="ticks"><li>Site responsive et accessible</li><li>Hébergement IIS ou cloud</li><li>Sous-domaines et HTTPS</li></ul>
+        </li>
+        <li class="card">
+          <span class="card-ico"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg></span>
+          <h3>Sécurité des accès</h3>
+          <p>Droits par groupe, authentification centralisée et règles de pare-feu : vos données restent accessibles aux bonnes personnes.</p>
+          <ul class="ticks"><li>Droits d'accès par service</li><li>Authentification RADIUS</li><li>Restrictions sur les postes</li></ul>
+        </li>
+        <li class="card">
+          <span class="card-ico"><svg class="ico" aria-hidden="true"><use href="#i-support"/></svg></span>
+          <h3>Support &amp; maintenance</h3>
+          <p>Assistance aux utilisateurs, mises à jour et interventions planifiées pour que votre informatique reste disponible.</p>
+          <ul class="ticks"><li>Assistance à distance et sur site</li><li>Maintenance préventive</li><li>Évolutions de votre installation</li></ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="apropos" aria-labelledby="h-apropos">
+    <div class="wrap split">
+      <div class="split-visual">
+        <img src="images/socle.svg" width="520" height="460" loading="lazy" alt="Schéma de quatre couches empilées : réseau, DNS et DHCP à la base, puis annuaire et accès, messagerie, et enfin site web et domaine au sommet.">
+      </div>
+      <div class="split-copy">
+        <p class="eyebrow">À propos</p>
+        <h2 id="h-apropos">Un partenaire technique de proximité, à Lomé</h2>
+        <p>NovaLink Togo accompagne les organisations qui veulent un système d'information solide sans avoir à monter leur propre service informatique.</p>
+        <p>Notre approche : un socle cohérent où chaque service s'appuie sur le précédent. Le réseau et le DNS rendent chaque ressource joignable par un nom clair ; l'annuaire donne à chaque collaborateur un compte unique ; la messagerie et le site web s'appuient sur votre nom de domaine.</p>
+        <ul class="checklist">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Des solutions éprouvées plutôt que des effets de mode</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Des configurations documentées et transmises</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Un discours clair, sans jargon inutile</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="pourquoi" aria-labelledby="h-pourquoi">
+    <div class="dark-shapes" aria-hidden="true"></div>
+    <div class="wrap">
+      <header class="section-head section-head-light">
+        <p class="eyebrow eyebrow-dark">Pourquoi nous</p>
+        <h2 id="h-pourquoi">Ce qui fait la différence au quotidien</h2>
+        <p>Nos engagements sont simples : vous savez ce qui est installé, pourquoi, et comment le faire évoluer.</p>
+      </header>
+      <ul class="values">
+        <li class="value">
+          <span class="value-ico"><svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg></span>
+          <h3>Une solution intégrée</h3>
+          <p>Réseau, annuaire, messagerie et web conçus ensemble, plutôt que des outils posés côte à côte.</p>
+        </li>
+        <li class="value">
+          <span class="value-ico"><svg class="ico" aria-hidden="true"><use href="#i-flask"/></svg></span>
+          <h3>Testé avant d'être ouvert</h3>
+          <p>Chaque service est validé sur votre réseau interne avant d'être publié sur Internet.</p>
+        </li>
+        <li class="value">
+          <span class="value-ico"><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg></span>
+          <h3>Documentation remise</h3>
+          <p>Chaque installation est livrée avec son manuel et ses procédures, pour que vous restiez autonome.</p>
+        </li>
+        <li class="value">
+          <span class="value-ico"><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg></span>
+          <h3>Transparence</h3>
+          <p>Des propositions détaillées et des choix techniques expliqués, sans coût caché.</p>
+        </li>
+        <li class="value">
+          <span class="value-ico"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg></span>
+          <h3>Sécurité dès la conception</h3>
+          <p>Droits minimaux, serveurs internes non exposés et accès en ligne chiffré (HTTPS).</p>
+        </li>
+        <li class="value">
+          <span class="value-ico"><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg></span>
+          <h3>Proximité</h3>
+          <p>Une équipe basée à Lomé, qui échange avec vous en français et intervient sur site.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="methode" aria-labelledby="h-methode">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Notre méthode</p>
+        <h2 id="h-methode">Une démarche claire, du diagnostic au suivi</h2>
+        <p>Chaque projet suit les mêmes étapes, avec des livrables concrets et des points de validation avec vous.</p>
+      </header>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-head"><span class="step-num" aria-hidden="true">01</span><span class="step-ico"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg></span></span>
+          <h3>Écoute &amp; diagnostic</h3>
+          <p>Échange sur vos besoins, état des lieux de votre parc et de vos usages, priorités.</p>
+        </li>
+        <li class="step">
+          <span class="step-head"><span class="step-num" aria-hidden="true">02</span><span class="step-ico"><svg class="ico" aria-hidden="true"><use href="#i-pencil"/></svg></span></span>
+          <h3>Conception &amp; proposition</h3>
+          <p>Architecture cible, choix des technologies et offre technique et financière détaillée.</p>
+        </li>
+        <li class="step">
+          <span class="step-head"><span class="step-num" aria-hidden="true">03</span><span class="step-ico"><svg class="ico" aria-hidden="true"><use href="#i-flask"/></svg></span></span>
+          <h3>Déploiement &amp; tests</h3>
+          <p>Installation et configuration des services sur votre réseau interne, puis vérifications complètes.</p>
+        </li>
+        <li class="step">
+          <span class="step-head"><span class="step-num" aria-hidden="true">04</span><span class="step-ico"><svg class="ico" aria-hidden="true"><use href="#i-cloud"/></svg></span></span>
+          <h3>Mise en ligne</h3>
+          <p>Publication du site et rattachement à votre nom de domaine, avec accès sécurisé en HTTPS.</p>
+        </li>
+        <li class="step">
+          <span class="step-head"><span class="step-num" aria-hidden="true">05</span><span class="step-ico"><svg class="ico" aria-hidden="true"><use href="#i-handshake"/></svg></span></span>
+          <h3>Formation &amp; suivi</h3>
+          <p>Remise de la documentation, prise en main par vos équipes, puis support dans la durée.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="cta-band" aria-labelledby="h-cta">
+    <div class="wrap">
+     <div class="cta-inner">
+      <div>
+        <h2 id="h-cta">Un projet, une question, un besoin d'assistance ?</h2>
+        <p>Décrivez-nous votre organisation et vos besoins : nous revenons vers vous avec une première analyse.</p>
+      </div>
+      <a class="btn btn-light" href="#contact">Prendre contact <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+     </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="h-contact">
+    <div class="wrap contact">
+      <div class="contact-intro">
+        <p class="eyebrow">Contact</p>
+        <h2 id="h-contact">Parlons de votre projet</h2>
+        <p>Écrivez-nous en précisant votre organisation et votre besoin. Le bouton ci-dessous ouvre votre logiciel de messagerie ; aucune donnée n'est collectée par ce site.</p>
+        <a class="btn btn-primary" href="mailto:contact@ipnet.local?subject=Demande%20de%20contact%20-%20NovaLink%20Togo">Écrire à NovaLink Togo <svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></a>
+        <div class="brief">
+          <h3>Pour une réponse rapide, indiquez :</h3>
+          <ul class="checklist">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>le nom de votre organisation et votre secteur ;</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>le nombre approximatif de postes et d'utilisateurs ;</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>les services concernés (réseau, messagerie, site web…) ;</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>vos disponibilités pour un premier échange.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-card">
+        <h3>Coordonnées</h3>
+        <address>
+        <ul class="contact-list">
+          <li>
+            <span class="ci"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <span><small>E-mail</small><a href="mailto:contact@ipnet.local">contact@ipnet.local</a></span>
+          </li>
+          <li>
+            <span class="ci"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg></span>
+            <span><small>Téléphone</small><a href="tel:+22822000000">+228&nbsp;22&nbsp;00&nbsp;00&nbsp;00</a></span>
+          </li>
+          <li>
+            <span class="ci"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span>
+            <span><small>Adresse</small>Boulevard du 13 Janvier, Lomé, Togo</span>
+          </li>
+          <li>
+            <span class="ci"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg></span>
+            <span><small>Horaires</small>Lundi – Vendredi, 8h00 – 17h00</span>
+          </li>
+        </ul>
+        </address>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand-light" href="#haut" aria-label="NovaLink Togo - retour en haut de la page">
+        <img src="favicon.svg" alt="" width="36" height="36">
+        <span class="brand-name">NovaLink <span>Togo</span></span>
+      </a>
+      <p>Services informatiques et intégration réseau pour les organisations au Togo.</p>
+    </div>
+    <nav aria-label="Services (pied de page)">
+      <h2>Services</h2>
+      <ul>
+        <li><a href="#services">Réseau &amp; connectivité</a></li>
+        <li><a href="#services">Annuaire &amp; postes</a></li>
+        <li><a href="#services">Messagerie professionnelle</a></li>
+        <li><a href="#services">Site web &amp; domaine</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Entreprise (pied de page)">
+      <h2>Entreprise</h2>
+      <ul>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#pourquoi">Pourquoi nous</a></li>
+        <li><a href="#methode">Méthode</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="mailto:contact@ipnet.local">contact@ipnet.local</a></li>
+        <li><a href="tel:+22822000000">+228&nbsp;22&nbsp;00&nbsp;00&nbsp;00</a></li>
+        <li>Boulevard du 13 Janvier, Lomé, Togo</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="annee">2026</span> NovaLink Togo. Tous droits réservés.</p>
+    <p>Site réalisé par l'équipe PPE 300 - IPNET Institute of Technology</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 460" width="520" height="460">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEF3FB"/><stop offset="1" stop-color="#DCE6F5"/>
+    </linearGradient>
+    <linearGradient id="n1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1B3A6B"/><stop offset="1" stop-color="#25508F"/></linearGradient>
+    <linearGradient id="o1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E8590C"/><stop offset="1" stop-color="#F07A3A"/></linearGradient>
+    <filter id="sh" x="-10%" y="-30%" width="120%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1B3A6B" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="520" height="460" rx="28" fill="url(#bg)"/>
+  <g stroke="#1B3A6B" stroke-opacity=".06"><path d="M0 92h520M0 184h520M0 276h520M0 368h520M104 0v460M208 0v460M312 0v460M416 0v460"/></g>
+  <g font-family="Segoe UI, Roboto, Arial, sans-serif">
+    <!-- couche 4 (bas) -->
+    <g filter="url(#sh)">
+      <path d="M260 300 470 362 260 424 50 362z" fill="url(#n1)"/>
+      <path d="M260 250 470 312 260 374 50 312z" fill="#2B5596"/>
+      <path d="M260 200 470 262 260 324 50 262z" fill="#3A68AC"/>
+      <path d="M260 150 470 212 260 274 50 212z" fill="url(#o1)"/>
+    </g>
+    <g fill="#fff" font-weight="700" font-size="14" text-anchor="middle">
+      <text x="260" y="216">Site web &amp; domaine</text>
+      <text x="260" y="302" fill-opacity=".95">Messagerie</text>
+      <text x="260" y="352" fill-opacity=".95">Annuaire &amp; accès</text>
+      <text x="260" y="402" fill-opacity=".95">Réseau, DNS &amp; DHCP</text>
+    </g>
+    <!-- pastille titre -->
+    <rect x="160" y="56" width="200" height="40" rx="20" fill="#ffffff" stroke="#1B3A6B" stroke-opacity=".12"/>
+    <circle cx="184" cy="76" r="6" fill="#E8590C"/>
+    <text x="270" y="81" fill="#1B3A6B" font-size="14" font-weight="700" text-anchor="middle">Un socle cohérent</text>
+    <path d="M260 96v40" stroke="#E8590C" stroke-width="2" stroke-dasharray="3 5"/>
+  </g>
+</svg>

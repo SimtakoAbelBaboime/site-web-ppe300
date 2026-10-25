@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1B3A6B">
+<title>Page introuvable | NovaLink Togo</title>
+<!-- Styles intégrés : la page 404 peut être servie depuis n'importe quelle URL, les chemins relatifs ne seraient pas fiables. -->
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;color:#C9D7EC;line-height:1.6;
+    background:radial-gradient(900px 500px at 85% -10%,rgba(232,89,12,.22),transparent 60%),radial-gradient(800px 500px at -10% 110%,rgba(43,85,150,.55),transparent 60%),linear-gradient(160deg,#1B3A6B 0%,#10244A 55%,#0B1B36 100%);
+    display:flex;flex-direction:column;min-height:100vh}
+  header,main,footer{width:100%;max-width:1200px;margin:0 auto;padding:0 24px}
+  header{padding-top:24px;padding-bottom:24px}
+  .brand{display:inline-flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-weight:800;font-size:1.3rem;letter-spacing:-.02em}
+  .brand span{color:#FF8A4C;font-weight:700}
+  main{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding-top:40px;padding-bottom:64px}
+  .code{font-size:clamp(5rem,16vw,9rem);font-weight:800;line-height:1;letter-spacing:-.05em;margin:0;background:linear-gradient(90deg,#FFB38A,#FF8A4C);-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.2;letter-spacing:-.02em;margin:12px 0 12px}
+  p{max-width:560px;font-size:1.1rem;margin:0 0 32px}
+  .btn{display:inline-flex;align-items:center;gap:.55em;background:#C2410C;color:#fff;font-weight:700;padding:.95em 1.5em;border-radius:12px;text-decoration:none;box-shadow:0 8px 20px rgba(194,65,12,.3)}
+  .btn:hover{background:#A8380A}
+  a:focus-visible{outline:3px solid #FF8A4C;outline-offset:3px;border-radius:8px}
+  svg.ico{width:1.25em;height:1.25em;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+  footer{padding-top:20px;padding-bottom:24px;border-top:1px solid rgba(255,255,255,.1);font-size:.88rem;color:#93A6C4}
+</style>
+</head>
+<body>
+<header>
+  <!-- Lien vers la racine "/" : volontaire, pour fonctionner quelle que soit l'URL introuvable -->
+  <a class="brand" href="/" aria-label="NovaLink Togo - accueil">
+    <svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2B5596"/><stop offset="1" stop-color="#1B3A6B"/></linearGradient></defs><rect width="64" height="64" rx="15" fill="url(#g)" stroke="#ffffff" stroke-opacity=".25"/><path d="M19 45V19l26 26V19" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="45" cy="19" r="6.5" fill="#E8590C" stroke="#1B3A6B" stroke-width="2.5"/><circle cx="19" cy="45" r="3.2" fill="#fff"/></svg>
+    NovaLink&nbsp;<span>Togo</span>
+  </a>
+</header>
+<main>
+  <p class="code" aria-hidden="true">404</p>
+  <h1>Cette page est introuvable</h1>
+  <p>L'adresse demandée n'existe pas ou a été déplacée. Revenez à l'accueil pour découvrir nos services informatiques et d'intégration réseau.</p>
+  <a class="btn" href="/">Retour à l'accueil <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</main>
+<footer>© 2026 NovaLink Togo · Lomé, Togo</footer>
+</body>
+</html>
